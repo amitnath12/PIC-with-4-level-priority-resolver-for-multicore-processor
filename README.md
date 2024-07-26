@@ -20,3 +20,5 @@ This project implements a programmable interrupt controller designed for a quad-
 - Stores addresses of service routines for each interrupt type, allowing quick and efficient response to interrupts.
 - # Vector Address:
 - Sends the vector address of the interrupt that is currently being served to the particular core through data bus.
+- # Control Logic:
+- Responsible for sending interrupt requests to the cores.When any core responds with Acknowledgement signal,Interrupt request should be updated for the other cores.
